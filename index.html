@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=960 height=540></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -29,11 +29,11 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Biolight.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Biolight.data.br",
-        frameworkUrl: buildUrl + "/Biolight.framework.js.br",
-        codeUrl: buildUrl + "/Biolight.wasm.br",
+        dataUrl: buildUrl + "/Biolight.data.unityweb",
+        frameworkUrl: buildUrl + "/Biolight.framework.js.unityweb",
+        codeUrl: buildUrl + "/Biolight.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "Jesus Valentin Valencia",
         productName: "Bio Light",
         productVersion: "1.0",
       };
@@ -63,7 +63,7 @@
         }, 5000);
       } else {
         canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.height = "540px";
       }
       loadingBar.style.display = "block";
 
